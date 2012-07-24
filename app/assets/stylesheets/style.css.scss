@@ -1,0 +1,364 @@
+// Define color
+$light_black: #333333;
+$lighter_black: #555555;
+
+$dark_gray: #aaaaaa;
+$gray: #cccccc;
+$lighter_gray: #dddddd;
+$lightest_gray: #fafafa;
+
+$darker_blue: #37548e;
+$dark_blue: #1d60af;
+$blue: #117cc0;
+$light_blue: #2ca6d9;
+
+$leaf_green: #07ad5b;
+$leaf_green_lighter: #6ac28f;
+$lime_green: #8ac640;
+$lime_green_lighter: #cde3a2;
+
+$dark_red: #ba1c1c;
+$light_red: #eb3838;
+
+@mixin debug {
+  border: 1px solid red;
+}
+
+@mixin container {
+  background-color: white;
+  border-radius: 5px;
+  display: block;
+  margin: 15px;
+  padding: 8px;
+}
+
+body {
+  background: none;
+  font: 14px tahoma, san-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  background: none;
+  color: $blue;
+}
+
+#header {
+  background-color: $light_black;
+  border-bottom: 3px solid $leaf_green;
+  min-height: 24px;
+  padding: 8px 95px;
+
+  a {
+    color: $dark_gray;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  a.site-name {
+    font-size: 20px;
+    color: white;
+  }
+
+  a.site-name:hover {
+    color: white;
+  }
+
+  #navigation {
+    float: right;
+    margin-top: 4px;
+
+    a {
+      font-size: 12px;
+      padding: 0 8px;
+    }
+  }
+
+}
+
+#content {
+  padding: 8px;
+  margin: 10px auto;
+  width: 1024px;
+
+  h1 {
+    color: $leaf_green;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0 10px 0;
+    padding-bottom: 5px;
+  }
+
+  input {
+    background-color: #fafafa;
+    border: 1px solid $lighter_gray;
+    font-size: 16px;
+    margin: 5px 0;
+    padding: 8px;
+    width: 380px;
+  }
+
+  input[type=submit] {
+    background-color: $darker_blue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+    padding: 8px 16px;
+    text-decoration: none;
+    width: auto;
+  }
+
+  label {
+    color: $dark_gray;
+    display: block;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  textarea {
+    border: 1px solid $lighter_gray;
+  }
+
+  #login_form, #register_form {
+    margin: 0 auto;
+    width: 400px;
+  }
+
+  .error-message {
+    color: $light_red;
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid $light_red;
+    border-radius: 5px;
+    background-color: #ffd8d8;
+
+    li {
+      list-style: none;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .field_with_errors {
+    background: none;
+
+    label {
+      color: $light_red;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      border-color: $light_red;
+    }
+  }
+
+  .notice-message {
+    padding: 10px;
+    border: 1px solid $lime_green_lighter;
+    border-radius: 5px;
+    background-color: #eefcdd;
+    color: $lime_green;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .user-information {
+    background-color: $lightest_gray;
+    border: 1px solid $lighter_gray;
+    border-radius: 10px;
+    float: left;
+    padding: 15px;
+    margin-top: 40px;
+    width: 300px;
+
+    textarea {
+      height: 100px;
+      margin: 5px 0;
+      resize: none;
+      width: 295px;
+    }
+
+    .error-message {
+      background: none;
+      border: none;
+      padding: 0;
+      font-weight: normal;
+    }
+
+    .user-name {
+      color: $leaf_green;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .user-email {
+      color: $lighter_black;
+      font-size: 12px;
+    }
+
+    .follower-followed {
+      margin: 10px 0;
+      border-top: 1px solid $lighter_gray;
+      border-bottom: 1px solid $lighter_gray;
+    }
+
+    .user-post-count, .follower-user, .followed-user {
+      display: inline-block;
+      font-size: 12px;
+      padding: 15px;
+      color: $darker-blue;
+      border-left: 1px solid $lighter_gray;
+
+      a {
+        text-decoration: none;
+        color: $darker-blue;
+      }
+
+      a:hover {
+        color: $blue;
+      }
+    }
+
+    .first {
+      border-left: none;
+    }
+    .edit-profile-button a {
+      background-color: $darker_blue;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      display: block;
+      font-weight: bold;
+      margin: 5px 0;
+      padding: 8px 16px;
+      text-decoration: none;
+      width: 80px;
+    }
+
+    .follow-button input {
+      background-color: $leaf_green_lighter;
+    }
+
+    .follow-button input:hover {
+      background-color: $leaf_green;
+    }
+
+    .unfollow-button input {
+      background-color: $dark_red;
+    }
+
+    .unfollow-button input:hover {
+      background-color: $light_red;
+    }
+  }
+
+  .user-post {
+    float: right;
+    padding: 8px;
+    width: 650px;
+
+    h2 {
+      border-bottom: 2px solid $gray;
+      color: #999999;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+      text-align: right;
+      padding-right: 5px;
+    }
+
+    .post {
+      background-color: $lightest_gray;
+      border: 1px solid $lighter_gray;
+      border-bottom: 2px solid $gray;
+      border-radius: 5px;
+      font-size: 12px;
+      margin-bottom: 5px;
+      padding: 10px 20px;
+
+      .post-owner {
+        margin: 5px 0;
+
+        a {
+          color: $lime_green;
+          font-weight: bold;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: $lime_green_lighter;
+        }
+
+      }
+
+      .post-content {
+        word-wrap: break-word;
+        text-wrap: normal;
+        white-space: pre-line;
+      }
+
+      .post-time {
+        color: $gray;
+        display: block;
+        font-size: 11px;
+        margin-top: 5px;
+      }
+
+      .delete-button {
+        background-color: $dark_red;
+        border-radius: 5px;
+        color: white;
+        display: block;
+        float: right;
+        font-size: 10px;
+        font-weight: bold;
+        margin-top: -18px;
+        padding: 3px 8px;
+        text-decoration: none;
+      }
+
+      .delete-button:hover {
+        background-color: $light_red;
+      }
+
+    }
+  }
+
+  .user {
+    border-bottom: 1px solid #eeeeee;
+    margin: 3px 0;
+    padding: 8px 25px;
+
+    a {
+      color: $lime_green;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $leaf_green_lighter;
+    }
+  }
+
+  .none {
+    color: $lighter_gray;
+    font-style: italic;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+  }
+
+}
