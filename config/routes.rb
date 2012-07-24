@@ -1,4 +1,10 @@
 MicropostApp::Application.routes.draw do
+
+  resources :users, :except => [:destroy]
+  resources :microposts, :only => [:index, :create, :destroy]
+  resources :relationships, :only => [:create, :destroy]
+  resources :user_sessions, :only => [:new, :create, :destroy]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
