@@ -16,6 +16,12 @@
     </div>
 
     <div id="content">
+      ﻿<% if flash[:notice] %>
+          <div class="notice-message">
+            <%= flash[:notice] %>
+          </div>
+      <% end %>
+
       <%= yield %>
     </div>
 </body>
