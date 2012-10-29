@@ -2,27 +2,35 @@
 <html>
 <head>
   <title>MicropostApp</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-    ﻿<div id="header">
-      <%= link_to "MICROPOST", root_url, :class => "site-name" %>
-      <div id="navigation">
-        <%= link_to "All users", users_url %>
+﻿
+<div id="header">
+  <%= link_to "MICROPOST", root_url, :class => "site-name" %>
+  <div id="navigation">
+    <%= link_to "All users", users_url %>
+    <% if current_user %>
+        <%= link_to current_user.name, user_url(current_user) %>
+        <%= link_to "Logout", logout_url %>
+    <% else %>
         <%= link_to "Sign up", new_user_url %>
+        <%= link_to "Login", login_url %>
+    <% end %>
+  </div>
+</div>
+
+<div id="content">
+  ﻿
+  <% if flash[:notice] %>
+      <div class="notice-message">
+        <%= flash[:notice] %>
       </div>
-    </div>
+  <% end %>
 
-    <div id="content">
-      ﻿<% if flash[:notice] %>
-          <div class="notice-message">
-            <%= flash[:notice] %>
-          </div>
-      <% end %>
-
-      <%= yield %>
-    </div>
+  <%= yield %>
+</div>
 </body>
 </html>

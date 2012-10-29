@@ -1,2 +1,15 @@
-<h1>UserSessions#new</h1>
-<p>Find me in app/views/user_sessions/new.html.erb</p>
+<div id='login_form'>
+  <h1>Login</h1>
+
+  <%= form_for @user_session do |f| %>
+      <%= render :partial => "shared/form_error_messages", :locals => { :model_object => @user_session} %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.submit "Login" %>
+  <% end %>
+</div>

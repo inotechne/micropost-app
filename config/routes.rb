@@ -7,6 +7,9 @@ MicropostApp::Application.routes.draw do
   resources :relationships, :only => [:create, :destroy]
   resources :user_sessions, :only => [:new, :create, :destroy]
 
+  match "login" => "user_sessions#new"
+  match "logout" => "user_sessions#destroy"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
