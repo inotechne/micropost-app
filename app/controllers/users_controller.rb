@@ -3,7 +3,9 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  # action show get id from post request then find user to show on views
   def show
+    @user = User.find(params[:id])
   end
 
   def new
