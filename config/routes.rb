@@ -9,6 +9,7 @@ MicropostApp::Application.routes.draw do
 
   match "login" => "user_sessions#new"
   match "logout" => "user_sessions#destroy"
+  match "edit_profile" => "users#edit"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

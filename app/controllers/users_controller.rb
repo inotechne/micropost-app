@@ -24,5 +24,18 @@ class UsersController < ApplicationController
   end
 
   def edit
+    @user = current_user
   end
+
+  def update
+    @user = current_user
+
+    if @user.update_attributes(params[:user])
+      flash[:notice] = "Your profile was updated."
+      redirect_to user_url(@user)
+    else
+      render :action => :edit
+    end
+  end
+
 end
