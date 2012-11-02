@@ -10,8 +10,8 @@ class MicropostsController < ApplicationController
       flash[:notice] = "Post successfully."
       redirect_to root_url
     else
-      current_user.feed # reload feed
       render :action => "index"
     end
   end
+  
 end
