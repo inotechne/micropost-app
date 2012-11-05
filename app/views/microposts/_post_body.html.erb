@@ -1,2 +1,8 @@
 <div class="post-content"><%= post.content %></div>
 <span class="post-time">posted <%= time_ago_in_words(post.created_at) %> ago.</span>
+<% if post.user_id == current_user.id %>
+    <%= link_to "delete", post,
+                :method => :delete,
+                :confirm => "Are you sure to delete this post?",
+                :class => "delete-button" %>
+<% end %>

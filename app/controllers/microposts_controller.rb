@@ -4,7 +4,7 @@ class MicropostsController < ApplicationController
   end
 
   def create
-   @micropost = current_user.microposts.new(params[:micropost])
+    @micropost = current_user.microposts.new(params[:micropost])
 
     if @micropost.save
       flash[:notice] = "Post successfully."
@@ -13,5 +13,10 @@ class MicropostsController < ApplicationController
       render :action => "index"
     end
   end
-  
+
+  def destroy
+    @micropost = Micropost.find(params[:id])
+    @micropost.destroy
+    redirect_to :back
+  end
 end
