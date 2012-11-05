@@ -13,6 +13,21 @@ class User < ActiveRecord::Base
   validates :email, :presence => true
 
   def feed
-    microposts.reload # always get newest feed
+    # get all post from following users included self post
+        monitored_user_id = following_users.map(&:id) << self.id
+        Micropost.where(:user_id => monitored_user_id)
   end
+
+  def following?(user)
+    relationships.exists?(:following_id => user)
+  end
+
+  def follow(user_id)
+    relationships.create(:following_id => user_id)
+  end
+
+  def unfollow(user_id)
+    relationships.find_by_following_id(user_id).destroy
+  end
+
 end

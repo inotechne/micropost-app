@@ -1,0 +1,11 @@
+<div class="follower-followed">
+  <span class="user-post-count first">
+    <%= pluralize(user.microposts.count, "post") %>
+  </span>
+  <span class="followed-user">
+    <%= link_to "#{user.following_users.count} following", following_user_url(user.id) %>
+  </span>
+  <span class="follower-user">
+     <%= link_to "#{user.follower_users.count} follower", follower_user_url(user.id) %>
+  </span>
+</div>

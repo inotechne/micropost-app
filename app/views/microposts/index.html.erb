@@ -1,5 +1,6 @@
 <div class="user-information">
   <span class="user-name"><%= current_user.name %></span>
+  <%= render :partial => "users/stats", :locals => {:user => current_user} %>
 
   <%= form_for @micropost do |f| %>
       <%= render :partial => "shared/form_error_messages", :locals => {:model_object => @micropost} %>
