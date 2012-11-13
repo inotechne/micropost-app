@@ -24,11 +24,11 @@ We have made guideline for this project in PD F and some free online course foll
 We are the **Ruby Team** at [Ino Techne](http://www.inotechne.com). Creative Intelligence for Business.
 
 ### The Ruby Team
-* [Richard Piacentini](@ircp)
-* [Pratompol Jiravanitchakorn﻿](@boat-pratompol)
-* [Monsiree Thassanakathitum](@monthas)
-* [Pithak Panmul](@thethak)
-* [Virudson Thitilertdecha](@virudson)
+* [Richard Piacentini](https://github.com/ircp)
+* [Pratompol Jiravanitchakorn﻿](https://github.com/boat-pratompol)
+* [Monsiree Thassanakathitum](https://github.com/monthas)
+* [Pithak Panmul](https://github.com/thethak)
+* [Virudson Thitilertdecha](https://github.com/virudson)
 
 
 ## FAQ
@@ -36,4 +36,4 @@ The FAQ is on the [wiki page](https://github.com/inotechne/micropost-app/wiki), 
 
 
 ## Credits
-This application is based on [Rails Tutorial sample app](https://github.com/mhartl/sample_app) by [Michael Hartl](@mhartl).
+This application is based on [Rails Tutorial sample app](https://github.com/mhartl/sample_app) by [Michael Hartl](https://github.com/mhartl).
