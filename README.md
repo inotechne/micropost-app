@@ -33,3 +33,7 @@ We are the **Ruby Team** at [Ino Techne](http://www.inotechne.com). Creative Int
 
 ## FAQ
 The FAQ is on the [wiki page](https://github.com/inotechne/micropost-app/wiki), If you have any question you can post it [here](https://github.com/inotechne/micropost-app/issues) we happy to find a solution for you.
+
+
+## Credits
+This application is based on [Rails Tutorial sample app](https://github.com/mhartl/sample_app) by [Michael Hartl](@mhartl).
