@@ -25,7 +25,7 @@ We have made guideline for this project in PDF and some free online course follo
 We are the **Ruby Team** at [Ino Techne](http://www.inotechne.com). Creative Intelligence for Business.
 
 ### The Ruby Team
-* [Richard Piacentini](https://github.com/ircp)
+* [Richard Piacentini](https://github.com/ricp)
 * [Pratompol Jiravanitchakorn﻿](https://github.com/boat-pratompol)
 * [Monsiree Thassanakathitum](https://github.com/monthas)
 * [Pithak Panmul](https://github.com/thethak)
