@@ -17,7 +17,7 @@ Participant shall be able to develop an application by using Rails 3.2.1 after f
 We have made guideline for this project in PD F and some free online course following links below...
 * Introduction to Ruby: this slide provides basic [Ruby Programming Language](http://www.ruby-lang.org/en/).
 * [Try Ruby](http://www.codeschool.com/courses/try-ruby): this is an online course which provides information for first met with Ruby language.
-* Workshop Guideline: This link provides a solution "How to build this application?" step by step.
+* [Workshop Guideline](https://github.com/inotechne/micropost-app/raw/master/micropost-app_guideline.pdf): This link provides a solution "How to build this application?" step by step.
 
 
 ## About us
