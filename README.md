@@ -4,10 +4,10 @@ Micropost-App
 ## About Project
 
 This project is a workshop for training at [Kasetsart University](http://www.ku.ac.th) July 2012. 
-In this workshop we will build application for post message and follow other user like "Twitter" develop using Rails 3.2.1
+Participant shall be able to develop an application by using Rails 3.2.1 after finished workshop. In the workshop, we had built an application for posting message and following user like “Twitter”.
 
 ### Application feature
-* User authentication system: user can signup, log in and log out ([AuthLogic gem](https://github.com/binarylogic/authlogic) ).
+* Authentication system: user will be able to sign up, log in, and log out ([AuthLogic gem](https://github.com/binarylogic/authlogic) ).
 * User can post a message on his page.
 * User can delete their own post.
 * User can follow other user and can see their message.
@@ -15,9 +15,9 @@ In this workshop we will build application for post message and follow other use
 
 ## Documentation
 We have made guideline for this project in PD F and some free online course following links below...
-* Introduction to Ruby: this slide for basic [Ruby Programming Language](http://www.ruby-lang.org/en/).
-* [Try Ruby](http://www.codeschool.com/courses/try-ruby): the online course for first met with ruby language.
-* Workshop Guideline: this will tell you how to build this application step by step.
+* Introduction to Ruby: this slide provides basic [Ruby Programming Language](http://www.ruby-lang.org/en/).
+* [Try Ruby](http://www.codeschool.com/courses/try-ruby): this is an online course which provides information for first met with Ruby language.
+* Workshop Guideline: This link provides a solution "How to build this application?" step by step.
 
 
 ## About us
@@ -32,7 +32,8 @@ We are the **Ruby Team** at [Ino Techne](http://www.inotechne.com). Creative Int
 
 
 ## FAQ
-The FAQ is on the [wiki page](https://github.com/inotechne/micropost-app/wiki), If you have any question you can post it [here](https://github.com/inotechne/micropost-app/issues) we happy to find a solution for you.
+The FAQ is on the [wiki page](https://github.com/inotechne/micropost-app/wiki), If you have any questions you can post it [here](https://github.com/inotechne/micropost-app/issues). 
+We would love to hear it and support you.
 
 
 ## Credits
