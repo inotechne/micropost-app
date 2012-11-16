@@ -8,7 +8,7 @@ This project is a workshop for training at [Kasetsart University](http://www.ku.
 Participant shall be able to develop an application by using Rails 3.2.1 after finished workshop. In the workshop, we had built an application for posting message and following user like “Twitter”.
 
 ### Application feature
-* Authentication system: user will be able to sign up, log in, and log out ([AuthLogic gem](https://github.com/binarylogic/authlogic) ).
+* Authentication system: user will be able to sign up, log in, and log out ([AuthLogic gem](https://github.com/binarylogic/authlogic)).
 * User can post a message on his page.
 * User can delete their own post.
 * User can follow other user and can see their message.
@@ -16,7 +16,8 @@ Participant shall be able to develop an application by using Rails 3.2.1 after f
 
 ## Documentation
 We have made guideline for this project in PDF and some free online course following links below...
-* Introduction to Ruby: this slide provides basic [Ruby Programming Language](http://www.ruby-lang.org/en/).
+* [Introduction to Ruby](https://github.com/inotechne/micropost-app/raw/master/ruby_code/introduct_to_ruby.pdf): this slide provides basic [Ruby Programming Language](http://www.ruby-lang.org/en/).
+* [Ruby Sample Code](https://github.com/inotechne/micropost-app/tree/master/ruby_code): source code for ruby training slide.
 * [Try Ruby](http://www.codeschool.com/courses/try-ruby): this is an online course which provides information for first met with Ruby language.
 * [Workshop Guideline](https://github.com/inotechne/micropost-app/raw/master/micropost-app_guideline.pdf): This link provides a solution "How to build this application?" step by step.
 
