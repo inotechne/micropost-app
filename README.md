@@ -4,7 +4,7 @@ Micropost-App
 
 ## About Project
 
-This project is a workshop for training at [Kasetsart University](http://www.ku.ac.th) July 2012. 
+This project is a workshop for training at [Kasetsart University](http://www.ku.ac.th) July 2012 by [SIPA-KU](https://sites.google.com/site/ossfasttrack/).
 Participant shall be able to develop an application by using Rails 3.2.1 after finished workshop. In the workshop, we had built an application for posting message and following user like “Twitter”.
 
 ### Application feature
